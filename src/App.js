@@ -2,8 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 import Home from './components/pages/Home';
-
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
@@ -13,13 +12,12 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <Switch>
-      {/*For the Home page component use Route*/ }
+        <Routes>
           <Route path='/' exact component={Home} />
-          <Route path='/services' component={Services} />
-          <Route path='/products' component={Products} />
-          <Route path='/sign-up' component={SignUp} />
-        </Switch>
+          <Route path='/services' element={Services} />
+          <Route path='/products' element={Products} />
+          <Route path='/sign-up' element={SignUp} />
+        </Routes>
       </Router>
     </>
   );
