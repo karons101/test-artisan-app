@@ -1,14 +1,15 @@
-import React from 'react';
+import React  from 'react';
 import '../App.css';
 import { Button } from './Button';
 import './HeroSection.css';
+
 
 function HeroSection() {
   return (
     <div className='hero-container'>
       <video src='/videos/video-1.mp4' autoPlay loop muted />
-      <h1>ADVENTURE AWAITS</h1>
-      <p>What are you waiting for?</p>
+      <h1>NEED A TASK DONE RIGHT?</h1>
+      <p>Get a handyman closest to you</p>
       <div className='hero-btns'>
         <Button
           className='btns'
@@ -31,3 +32,4 @@ function HeroSection() {
 }
 
 export default HeroSection;
+
