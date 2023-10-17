@@ -81,8 +81,7 @@
   }
   
   .footer-link-items a:hover {
-    color: #e9e9e9;
-    color: #ffd3d3;
+    color: aqua;
     transition: 0.3s ease-out;
   }
   
@@ -119,6 +118,10 @@
     justify-content: space-between;
     align-items: center;
     width: 240px;
+  }
+
+  .social-icons a:hover{
+    color: aqua;
   }
   
   .social-logo {
